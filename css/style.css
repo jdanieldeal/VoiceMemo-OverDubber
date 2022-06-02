@@ -1,0 +1,152 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  display: flex;
+  background-color: rgb(211, 211, 211);
+  font-family: 'Miriam Libre', sans-serif;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+h1{
+  margin: .3em;
+  text-align: center;
+  font-size: em;
+}
+
+
+.tape-machine{
+  display: flex;
+  margin: .3em 3rem;
+  width: 22em;
+  height: 35em;
+  background-color: rgb(31, 31, 31);
+  border-radius: 20px;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+.record-btn-wrapper{
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  background-color: rgb(228, 66, 66);
+  border-radius: 5px;
+}
+.play-btn-wrapper{
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  border-radius: 5px;
+  background-color: rgb(186, 186, 186);
+}
+.btns {
+  width: 4rem;
+  margin: .5rem;
+  padding: .2rem;
+}
+.pause-btn-wrapper{
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  border-radius: 5px;
+  background-color: rgb(186, 186, 186);
+}
+.play-btn{
+  padding: .5em;
+}
+.pause-btn{
+  padding: .9em;
+}
+.button-section{
+  display: flex;
+  width: 1000px;
+  justify-content: space-evenly;
+  align-content: flex-end;
+  align-items: stretch;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.mid-section{
+  display: flex;
+  height: 150px;
+  width: 300px;
+  border: 2px solid grey;
+  margin-bottom: 2rem;
+  background-color: rgb(205, 205, 205);
+  overflow: auto;
+  justify-content: center;
+}
+.save-edit-section{
+  display: flex;
+  height: 35px;
+  width: 300px;
+  margin-bottom: .3rem;
+  flex-direction: row-reverse;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.mid-section > img{
+  max-width: 100%;
+  max-height: 100%;
+  transform: scale(1.95);
+}
+#undo-btn{
+  max-width: 70%;
+  max-height: 70%;
+  filter: invert(0.9);
+}
+#redo-btn{
+  max-width: 70%;
+  max-height: 70%;
+  filter: invert(0.9);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.save-edit-section > h4{
+  color: rgb(229, 229, 229);
+  margin: 0;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
