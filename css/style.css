@@ -52,7 +52,7 @@ h1{
   align-content: flex-end;
 }
 
-.record-btn-wrapper{
+.record{
   width: fit-content;
   display: flex;
   justify-content: center;
@@ -75,7 +75,7 @@ h1{
   margin: .5rem;
   padding: .2rem;
 }
-.pause-btn-wrapper{
+.stop{
   width: fit-content;
   display: flex;
   justify-content: center;
